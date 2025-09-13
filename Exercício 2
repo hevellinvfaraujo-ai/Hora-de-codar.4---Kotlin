@@ -1,0 +1,12 @@
+fun main() {
+    val planetas = arrayOf("Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno")
+
+    print("Digite o nome de um planeta: ")
+    val planetaUsuario = readLine()!!
+
+    if (planetaUsuario in planetas) {
+        println("$planetaUsuario está na lista de planetas.")
+    } else {
+        println("$planetaUsuario não está na lista de planetas.")
+    }
+}
