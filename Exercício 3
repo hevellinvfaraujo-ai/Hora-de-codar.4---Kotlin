@@ -1,0 +1,18 @@
+fun main() {
+    val frutas = mutableListOf("Maçã", "Banana", "Laranja", "Uva", "Morango")
+
+    while (frutas.isNotEmpty()) {
+        println("\nLista de frutas disponíveis: $frutas")
+        print("Digite o nome de uma fruta para remover: ")
+        val frutaUsuario = readLine()!!
+
+        if (frutaUsuario in frutas) {
+            frutas.remove(frutaUsuario)
+            println("Fruta foi retirada da lista.")
+        } else {
+            println("Fruta indisponível no nosso mercado.")
+        }
+    }
+
+    println("Lista de compras finalizada.")
+}
